@@ -102,8 +102,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  #position: right
+  # position: left
+  position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -172,9 +172,9 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
   # Maximum heading depth of generated toc.
   max_depth: 6
 
@@ -194,7 +194,7 @@ chat:
 # ---------------------------------------------------------------
 
 # Show multilingual switcher in footer.
-language_switcher: false
+language_switcher: true
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
@@ -213,7 +213,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -282,9 +282,9 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: false
-  title: # Custom header, leave empty to use the default one
-  display_in_home: false
+  enable: true
+  title: 'Hello World' # Custom header, leave empty to use the default one
+  display_in_home: true
   params:
     maxCount: 5
     #PPMixingRate: 0.0
@@ -338,7 +338,7 @@ calendar:
 
 # Preconnect CDN for fonts and plugins.
 # For more information: https://www.w3.org/TR/resource-hints/#preconnect
-preconnect: false
+preconnect: true
 
 # Set the text alignment in posts / pages.
 text_align:
@@ -357,26 +357,26 @@ codeblock:
   # All available themes: https://theme-next.js.org/highlight/
   theme:
     light: default
-    dark: tomorrow-night
+    dark: atom-one-light
   prism:
     light: prism
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
-    style:
+    style: mac
 
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -384,7 +384,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -411,7 +411,7 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
@@ -525,7 +525,7 @@ mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -566,7 +566,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active:
+  active: valine
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -608,16 +608,16 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: false
-  appId: # Your leancloud application appid
-  appKey: # Your leancloud application appkey
+  enable: true
+  appId: kvMe6P3M8zvX1DeEHbGQnwvq-gzGzoHsz
+  appKey: KlwgMU4eNhTTb3KXiqnvlOGA
   serverURLs: # When the custom domain name is enabled, fill it in here
   placeholder: Just go go # Comment box placeholder
   avatar: mm # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
   lang: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
+  visitor: true # Article reading statistic
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   enableQQ: false # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
@@ -732,7 +732,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
