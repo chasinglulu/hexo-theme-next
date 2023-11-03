@@ -432,7 +432,7 @@ font:
   global:
     external: true
     family: Georgia
-    size: 1.125
+    size:
 
   # Font settings for site title (.site-title).
   title:
