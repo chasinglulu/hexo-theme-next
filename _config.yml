@@ -208,14 +208,16 @@ footer:
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    # name: fa fa-heart
+    name: fa fa-anchor
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    # color: "#ff0000"
 
+  since: 2018
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: Xinlu Wang
 
   # Powered by Hexo & NexT
   powered: false
@@ -288,7 +290,7 @@ follow_me:
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: true
-  title: 'Hello World' # Custom header, leave empty to use the default one
+  title: '' # Custom header, leave empty to use the default one
   display_in_home: true
   params:
     maxCount: 5
