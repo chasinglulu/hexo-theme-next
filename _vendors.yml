@@ -92,7 +92,7 @@ disqusjs_css:
   unavailable: [cdnjs]
 valine:
   name: valine
-  version: 1.4.14
+  version: 1.5.1
   file: dist/Valine.min.js
 gitalk_js:
   name: gitalk
