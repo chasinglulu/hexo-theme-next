@@ -573,7 +573,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: valine
+  active: waline
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -615,9 +615,11 @@ changyan:
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: true
-  appId: kvMe6P3M8zvX1DeEHbGQnwvq-gzGzoHsz
-  appKey: KlwgMU4eNhTTb3KXiqnvlOGA
+  enable: false
+  appId: GTElCTDpj3LoEPrCRChb0JS3-MdYXbMMI
+  appKey: KxQB4FZcpVPLF7Nz3W2Atr80
+  # appId: kvMe6P3M8zvX1DeEHbGQnwvq-gzGzoHsz
+  # appKey: KlwgMU4eNhTTb3KXiqnvlOGA
   serverURLs: # When the custom domain name is enabled, fill it in here
   placeholder: Just go go # Comment box placeholder
   avatar: mm # Gravatar style
@@ -629,6 +631,22 @@ valine:
   recordIP: false # Whether to record the commenter IP
   enableQQ: false # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: [] # Set required fields: [nick] | [nick, mail]
+
+# Waline
+# For more information: https://waline.js.org, https://github.com/walinejs/waline
+waline:
+  enable: true #是否开启
+  serverURL: waline-server-weld-five.vercel.app # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
+  placeholder: 请文明评论呀 # #评论框的默认文字
+  avatar: mm # 头像风格
+  meta: [nick, mail, link] # 自定义评论框上面的三个输入框的内容
+  pageSize: 10 # 评论数量多少时显示分页
+  lang: zh-cn # 语言, 可选值: en, zh-cn
+  # Warning: 不要同时启用 `waline.visitor` 以及 `leancloud_visitors`.
+  visitor: false # 文章阅读统计
+  comment_count: true # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
+  requiredFields: [] # 设置用户评论时必填的信息，[nick,mail]: [nick] | [nick, mail]
+  libUrl: # Set custom library cdn url
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
