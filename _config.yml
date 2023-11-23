@@ -370,8 +370,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: kimbie-light
-    dark: kimbie-light
+    light: base16/solarized-light
+    dark: base16/solarized-light
   prism:
     light: prism
     dark: prism-dark
@@ -467,7 +467,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: Times New Roman
+    family: 'Courier New'
 
 
 # ---------------------------------------------------------------
