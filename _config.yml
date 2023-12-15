@@ -946,7 +946,14 @@ waline:
   visitor: true # 文章阅读统计
   comment_count: true # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
   requiredFields: [] # 设置用户评论时必填的信息，[nick,mail]: [nick] | [nick, mail]
-  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@v2.0/dist/waline.js
+  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@2.15.8/dist/waline.js
+  emoji:
+  #  - https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/
+  #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/alus/
+    - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji/
+  #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tieba/
+  #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw/
+  #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-symbol/
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
