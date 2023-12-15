@@ -936,7 +936,7 @@ images: images
 # For more information: https://waline.js.org, https://github.com/walinejs/waline
 waline:
   enable: true #是否开启
-  serverURL: waline-server-weld-five.vercel.app # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
+  serverURL: www.chasinglulu.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
   placeholder: 请文明评论呀 # #评论框的默认文字
   avatar: mm # 头像风格
   meta: [nick, mail, link] # 自定义评论框上面的三个输入框的内容
@@ -946,7 +946,7 @@ waline:
   visitor: true # 文章阅读统计
   comment_count: true # 如果为 false , 评论数量只会在当前评论页面显示, 主页则不显示
   requiredFields: [] # 设置用户评论时必填的信息，[nick,mail]: [nick] | [nick, mail]
-  libUrl: # Set custom library cdn url
+  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@v2.0/dist/waline.js
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
