@@ -1,8 +1,14 @@
 {%- if theme.footer.beian.enable %}
   <div class="beian">
-    {{- next_url('https://beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
+    <span class="post-meta-item-icon">
+      <i class="fa fa-gears"></i>
+    </span>
+    {{- next_url('https://beian.miit.gov.cn', theme.footer.beian.icp) }}
+
+    <span class="post-meta-item"></span>
+
     {%- if theme.footer.beian.gongan_icon_url %}
-      <img src="{{ url_for(theme.footer.beian.gongan_icon_url) }}" alt="">
+      <img src="{{ url_for(theme.footer.beian.gongan_icon_url) }}" alt="" style="display:inline-block;text-decoration:none;height:13px;">
     {%- endif %}
     {%- if theme.footer.beian.gongan_id and theme.footer.beian.gongan_num %}
       {{- next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=' + theme.footer.beian.gongan_id, theme.footer.beian.gongan_num + ' ') }}
@@ -18,7 +24,10 @@
     <span class="with-love">
       <i class="{{ theme.footer.icon.name }}"></i>
     </span>
+    {{- next_url('http://abitacc.com/about', author) }}
+    <!-- annotation
     <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright or author }}</span>
+    -->
   </div>
 {%- endif %}
 
