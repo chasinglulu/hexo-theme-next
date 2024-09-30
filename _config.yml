@@ -57,7 +57,7 @@ favicon:
   medium: /images/favicon-32x32.png
   apple_touch_icon: /images/apple-touch-icon.png
   safari_pinned_tab: /images/logo.svg
-  android_manifest: /images/android-chrome-192x192.png
+  # android_manifest: /images/android-chrome-192x192.png
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.png
@@ -937,6 +937,7 @@ images: images
 waline:
   enable: true #是否开启
   serverURL: www.chasinglulu.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
+  cssUrl: https://cdn.jsdelivr.net/npm/@waline/client@2.15.8/dist/waline.css
   placeholder: 请文明评论呀 # #评论框的默认文字
   avatar: mm # 头像风格
   meta: [nick, mail] # 自定义评论框上面的三个输入框的内容
@@ -950,7 +951,7 @@ waline:
   emoji:
   #  - https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/
   #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/alus/
-    - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji/
+     - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji/
   #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tieba/
   #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw/
   #  - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-symbol/
