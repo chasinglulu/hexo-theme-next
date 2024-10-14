@@ -185,6 +185,7 @@ links_settings:
 links:
   Qemu: https://lore.kernel.org/qemu-devel/
   RT_Linux: https://wiki.linuxfoundation.org/realtime/documentation/start
+  Wiki: https://wiki.abitacc.com
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
