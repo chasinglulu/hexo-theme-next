@@ -937,7 +937,7 @@ images: images
 # For more information: https://waline.js.org, https://github.com/walinejs/waline
 waline:
   enable: true #是否开启
-  serverURL: www.chasinglulu.cn # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
+  serverURL: www.abitacc-waline.icu # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
   cssUrl: https://cdn.jsdelivr.net/npm/@waline/client@2.15.8/dist/waline.css
   placeholder: 请文明评论呀 # #评论框的默认文字
   avatar: mm # 头像风格
